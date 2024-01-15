@@ -1,0 +1,11 @@
+# Exclude virtual environment
+venv
+
+# Exclude user personal data
+*.xl*
+config.ini
+config.json
+
+# Exclude noise/cache files
+*.pyc
+~$*.xl*
