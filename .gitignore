@@ -9,3 +9,4 @@ config.json
 # Exclude noise/cache files
 *.pyc
 ~$*.xl*
+.vscode
