@@ -8,5 +8,6 @@ config.json
 
 # Exclude noise/cache files
 *.pyc
+__pycache__
 ~$*.xl*
 .vscode
