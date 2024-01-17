@@ -4,7 +4,16 @@
     {
         "quiet" : true,
         "excel_files_dir" : "C:\\Users\\profile\\Documents\\excel files",
-        "output_excel_file_name" : "output.xlsx"
-    }
+        "output_excel_file_name" : "output.xlsx",
+        "rename_columns" : false
+    },
+    "_combine_fields_comment":"This is the data structure. The key is the immutable field. The values are any fields to be converted to the immutable field.",
+    "Combine_Fields" :
+    {
+        "YEAR": ["Year","YeAr","YYYY"],
+        "DOB": ["Date of Birth","Birthday","When were you born."],
+        "Etc": ["Etc1", "Etc2", "Etc3"]
+    },
+    "Default_Values" : {}
     
 }
