@@ -54,7 +54,19 @@ logging.debug(_df_rename__rename_redundants_dict)
 
 def reduce_field_whitespace_custom(str1):
     """ Wrapper for 'dict__old_to_unique_new_field' """
-    return dict__old_to_unique_new_field(str1, strip=True, titleize=True)
+    return dict__old_to_unique_new_field(
+        str1, 
+        strip=True, 
+        titleize=True, 
+        replace_original_sub_str=[
+            # ('.',''),
+            (r'/',''),
+            # ('-',' '),
+            # (',',''),
+            # ('(',''),
+            # (')',''),
+            ]
+        )
 
 def main():
     # Check-out each excel file and then combine
@@ -88,10 +100,11 @@ def main():
             except PermissionError:
                 logging.warning(f"The file '{file}' cannot be opened.")
         # Create one sheet containing all spreadsheet data.
+        logging.info("Complete extracting spreadsheets. Compiling now.")
         result = pd.concat(frames)
+        logging.info("Saving files.")
         result.to_excel(writer, index=False)
-
-    logging.info("Reading files complete. Press ENTER to continue.")
+        logging.info("Saving files complete.")
     if not quiet: dali=input()
 
 if __name__ == '__main__':

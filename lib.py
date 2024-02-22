@@ -23,8 +23,8 @@ def is_excel_file(file_name):
     return any((file_name.endswith(ext) for ext in ('.xls','.xlsx')))
 
 def reduce_whitespace_to_one_space(str1:str):
-    # return re.sub(r'\s+'," ", str1).strip()
-    return str1
+    # return str1
+    return re.sub(r'\s+'," ", str1).strip()
 
 def dict__old_to_unique_new_field(
         columns:list[str], 
@@ -32,6 +32,7 @@ def dict__old_to_unique_new_field(
         titleize:bool=False,
         lower:bool=False,
         upper:bool=False,
+        replace_original_sub_str:list[tuple()]=[],
         )->dict(str=str):
     # reduce whitespace to one space
     new_strs = [re.sub(r'\s+'," ",old_str) for old_str in columns]
@@ -40,6 +41,9 @@ def dict__old_to_unique_new_field(
     if titleize: new_strs = [str1.title() for str1 in new_strs]
     if lower: new_strs = [str1.lower() for str1 in new_strs]
     if upper: new_strs = [str1.upper() for str1 in new_strs]
+    if replace_original_sub_str:
+        for original,to_replace in replace_original_sub_str:
+            new_strs = [str1.replace(original,to_replace) for str1 in new_strs]
     assert all((not s.endswith(" ") and not s.startswith(" ") for s in new_strs))
     # Make each unique str
     uniques = list()

@@ -1,0 +1,20 @@
+Sex | Sex Assigned At Birth, Sex By Birth
+Gender Identity | Do You Consider Yourself To Be
+Relationship Status | Marital Status
+Dob | Date Of Birth
+Phone Contact | Contact
+Enthnicty | Ethnicity, Enthinicty
+Had Hiv Test Within The Last Six Months | Had Hiv Test Within The Last Six Month
+Condom Use With Person Of Known Hiv-Positive Status | Condom Use With Persaon Of Known Hiv-Positive Status
+Had A Non Occupational Exposure (E.G Rape,  Incest,  Sexual Violence) | Had Non-Occupational Exposure (E.G Rape,  Incest,  Sexual Violence)
+Had An Occupational Exposure (E.G Needlestick Injury) | Had An Occupational Exposure (E.G Needle-Stick)
+Received A Transplant Of Tissue Organ Or Artificial Insemination | Received A Transplant Of Tissue,  Organ Or Artificial Insemination
+Received Transfusion Of Blood,  Blood Products Or Clotting Factors | Blood Products Or Clotting Factors
+Had Sex With Person(S) Of Known Hiv-Positive Status | Had Sex With Person Of Known Hiv-Positive Status
+Had Sex With Workers | Had Sexual Intercourse (Oral,  Anal,  Genital) With Sex Workers
+Exchange Sex For Money,  Drugs,  Material Gain | Exchange Sex For Money,  Drugs,  Material Gain ≤ 12 Mths
+Used Non-Illicit Drugs (Crack, Cocaine, Marijuana) | Used Non-Illicit Drugs (Crack,  Cocaine,  Marijuana)
+Injected Nonprescription Drugs (E.G. Heroin) | Injected Non Prescription Drugs,  Drugs (E.G Heroin)
+Ever Received Pep | Pep Received
+Result | Test Result, Results
+Any History Of Incarceration In Prison | Any Hisotry Of Incarceration In Prison,  Any History Of Incarceration In Prison In The Last 5 Years
